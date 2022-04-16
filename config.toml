@@ -1,64 +1,91 @@
-baseurl = "http://gabi-a.github.io"
-title = "Gabi Abrahams"
-theme = "hugo-coder"
-languagecode = "en"
-defaultcontentlanguage = "en"
+baseURL = "http://gabi-a.github.io/"
+languageCode = "en-us"
+title = "The Scientific Gab"
+theme = "ezhil"
 
-paginate = 20
+copyright = "© Gabriel Abrahams 2022"
 
-pygmentsstyle = "bw"
+# Enable syntax highlighting.
+pygmentsstyle = "solarized-dark"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-# disqusShortname = "yourdiscussshortname"
+# Your Google analytics code.
+# googleAnalytics = "UA-123-45"
+# Your Disqus sortname.
+# disqusShortname = "localhost"
+
+# Number of posts to show in recent posts list (Optional). Defaults to 10.
+paginate = 10
+
+# Number of characters to show in summary.
+summaryLength = 20
 
 [params]
-  author = "Gabi Abrahams"
-  # info = "PhD Student"
-  # description = "John Doe's personal website"
-  # keywords = "blog,developer,personal"
-  # avatarurl = "images/avatar.jpg"
-  # gravatar = "john.doe@example.com"
+    # Blog subtitle which appears below blog title. Supports markdown.
+    subtitle = "The best and only gablog on this page of the internet."
 
-  favicon_32 = "/img/favicon-32x32.png"
-  favicon_16 = "/img/favicon-16x16.png"
+    # Content types which are included in home page recent posts list.
+    mainSections = ["posts"]
 
-  since = 2021
+    # Content types which are excludes Disqus comments.
+    disableDisqusTypes = ["page"]
 
-  enableTwemoji = true
+    # If social media links are enabled then enable this to fetch icons from CDN instead of hosted on your site.
+    featherIconsCDN = true
 
-  colorScheme = "dark"
-  hidecolorschemetoggle = false
+    # Specify favicon (icons/i.png maps to static/icons/i.png). No favicon if not defined.
+    favicon = "icons/myicon.png"
 
+    # Switch to dark mode or auto detect mode from OS (Optional).
+    # "dark" will set mode to dark and "auto" will switch to dark mode if OS is in dark mode.
+    mode = "auto" # "dark" or "auto"
+
+    # Custom CSS added to default styles. Files added to `static` folder is copied as it is to
+    # root by Hugo. For example if you have custom CSS file under `static/css/custom.css` then
+    # you can specify custom css path as `css/custom.css`.
+    customCSS = "css/custom.css"
+    # Custom CSS added to dark mode style.
+    customDarkCSS = "css/custom-dark.css"
+
+    # Custom list of Javascript files to load. Just like custom CSS you can place js files under
+    # `static/js` folder and specify path here as `js/script-name.js`. You can also specify full url,
+    # for example you may want to include external JS library.
+    customJS = ["js/abc.js", "js/xyz.js", "https://code.jquery.com/jquery-3.4.1.js"]
+
+# Main menu which appears below site header.
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 3
+
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 4
+
+# Social media links which shows up on site header.
+# Uses feather icons for icons. You can [search icon names from here](https://feathericons.com/).
+[[params.social]]
+name = "Github"
+icon = "github"
+url = "https://github.com/gabi-a"
+
+[[params.social]]
+name = "Twitter"
+icon = "twitter"
+url = "https://twitter.com/GabrielAbrahams"
+
+# Enable tags.
 [taxonomies]
-  category = "categories"
-  series = "series"
-  tag = "tags"
-  author = "authors"
-
-# Social links
-# [[params.social]]
-#   name = "Github"
-#   icon = "fa fa-github fa-2x"
-#   weight = 1
-#   url = "https://github.com/johndoe/"
-# [[params.social]]
-#   name = "Gitlab"
-#   icon = "fa fa-gitlab fa-2x"
-#   weight = 2
-#   url = "https://gitlab.com/johndoe/"
-# [[params.social]]
-#   name = "Twitter"
-#   icon = "fa fa-twitter fa-2x"
-#   weight = 3
-#   url = "https://twitter.com/johndoe/"
-
-# Menu links
-# [[menu.main]]
-#   name = "Blog"
-#   weight = 1
-#   url  = "posts/"
-# [[menu.main]]
-#   name = "About"
-#   weight = 2
-#   url = "about/"
+   tag = "tags"
