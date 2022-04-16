@@ -23,7 +23,7 @@ summaryLength = 20
 
 [params]
     # Blog subtitle which appears below blog title. Supports markdown.
-    subtitle = "The best and only gablog on this page of the internet."
+    subtitle = "Journey to the gablogosphere. A gablog of one's own. And other gablog themed subtitles."
 
     # Content types which are included in home page recent posts list.
     mainSections = ["posts"]
