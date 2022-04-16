@@ -1,4 +1,4 @@
-baseURL = "http://gabi-a.github.io/"
+baseURL = "https://gabi-a.github.io/"
 languageCode = "en-us"
 title = "The Scientific Gab"
 theme = "ezhil"
