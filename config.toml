@@ -23,7 +23,7 @@ summaryLength = 20
 
 [params]
     # Blog subtitle which appears below blog title. Supports markdown.
-    subtitle = "Journey to the gablogosphere. A gablog of one's own. And other gablog themed subtitles."
+    subtitle = "Personal gablog of Gabriel Abrahams."
 
     # Content types which are included in home page recent posts list.
     mainSections = ["posts"]
@@ -70,9 +70,14 @@ url = "/about"
 weight = 3
 
 [[menu.main]]
+name = "Acknowledgement of Country"
+url = "acknowledgement"
+weight = 4
+
+[[menu.main]]
 name = "Tags"
 url = "/tags"
-weight = 4
+weight = 5
 
 # Social media links which shows up on site header.
 # Uses feather icons for icons. You can [search icon names from here](https://feathericons.com/).
