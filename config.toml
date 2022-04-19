@@ -71,7 +71,7 @@ weight = 3
 
 [[menu.main]]
 name = "Acknowledgement of Country"
-url = "acknowledgement"
+url = "/acknowledgement"
 weight = 4
 
 [[menu.main]]
