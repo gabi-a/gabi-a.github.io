@@ -4,7 +4,7 @@ date: 2022-04-03T00:08:42+11:00
 draft: false
 ---
 
-Because I wrote it.[^1]
+Because I wrote it.[^1] 
 
 Furthermore, my motivation is to practice writing, and to develop my ability to convey scientific ideas of my own and others. A blog seems a safeish place to do this - not very likely to be read by all the people I really hope to reach but am currently hiding from in case they discover me and don't rate my opinions,[^2] but not entirely invisible either.[^3] 
 
