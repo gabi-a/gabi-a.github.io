@@ -4,7 +4,7 @@ date: 2022-04-03T00:08:42+11:00
 draft: false
 ---
 
-Because I wrote it.[^1] 
+Because I wrote it.[^1]
 
 Furthermore, my motivation is to practice writing, and to develop my ability to convey scientific ideas of my own and others. A blog seems a safeish place to do this - not very likely to be read by all the people I really hope to reach but am currently hiding from in case they discover me and don't rate my opinions,[^2] but not entirely invisible either.[^3] 
 
@@ -18,6 +18,6 @@ My goals are to:
 &ensp; ↪ to other scientists, such as colleagues and thesis assesors
 * inspire someone, just as I have been inspired reading about other's journeys
 
-[^1]: [Lenny found himself in simimilar circumstances](https://en.wikipedia.org/wiki/Plato_and_a_Platypus_Walk_Into_a_Bar#Summary)
-[^2]: 😱
-[^3]: After all, here you are!
+[^1]:[Lenny found himself in simimilar circumstances](https://en.wikipedia.org/wiki/Plato_and_a_Platypus_Walk_Into_a_Bar#Summary)
+[^2]:😱
+[^3]:After all, here you are!
