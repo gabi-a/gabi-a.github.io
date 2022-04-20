@@ -1,3 +1,5 @@
 [submodule "themes/ezhil"]
 	path = themes/ezhil
 	url = https://github.com/vividvilla/ezhil.git
+[submodule "ezhil"]
+	url = https://github.com/gabi-a/ezhil.git

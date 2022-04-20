@@ -6,7 +6,17 @@
     <description>Recent content on The Science Gab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© Gabriel Abrahams 2022</copyright><atom:link href="https://www.thesciencegab.com/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© Gabriel Abrahams 2022</copyright>
+    <lastBuildDate>Wed, 20 Apr 2022 09:35:39 +1000</lastBuildDate><atom:link href="https://www.thesciencegab.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Publications</title>
+      <link>https://www.thesciencegab.com/publications/</link>
+      <pubDate>Wed, 20 Apr 2022 09:35:39 +1000</pubDate>
+      
+      <guid>https://www.thesciencegab.com/publications/</guid>
+      <description>Journal Articles Abrahams, Gabriel Jan, and Janet Newman. 2019. “BLASTing Away Preconceptions in Crystallization Trials.” Acta Crystallographica Section F Structural Biology Communications 75 (3): 184–92.</description>
+    </item>
+    
     <item>
       <title>Acknowledgement of Country</title>
       <link>https://www.thesciencegab.com/acknowledgement/</link>
@@ -24,6 +34,16 @@
       <guid>https://www.thesciencegab.com/about/</guid>
       <description>Hello and welcome to my blog!
 Links to other gablogs The Social Science Gab</description>
+    </item>
+    
+    <item>
+      <title>Why this blog exists</title>
+      <link>https://www.thesciencegab.com/posts/why-this-blog-exists/</link>
+      <pubDate>Sun, 03 Apr 2022 00:08:42 +1100</pubDate>
+      
+      <guid>https://www.thesciencegab.com/posts/why-this-blog-exists/</guid>
+      <description>Because I wrote it.1
+Furthermore, my motivation is to practice writing, and to develop my ability to convey scientific ideas of my own and others.</description>
     </item>
     
   </channel>

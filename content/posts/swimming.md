@@ -2,7 +2,7 @@
 title: "Swimming"
 date: 2022-04-03T00:08:42+11:00
 draft: true
-# math: true
+tags: ["swimming","random"]
 ---
 # My favourite swim exercise.
 _Note: I'm not a swim coach!_

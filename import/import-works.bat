@@ -1,0 +1,1 @@
+pandoc -t markdown_strict --citeproc works.md -o works-output.md --bibliography works.bib
