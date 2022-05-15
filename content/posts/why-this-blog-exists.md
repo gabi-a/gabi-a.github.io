@@ -1,7 +1,7 @@
 ---
 title: "Why this blog exists"
 date: 2022-04-03T00:08:42+11:00
-draft: false
+draft: true
 ---
 
 Because I wrote it.[^1]

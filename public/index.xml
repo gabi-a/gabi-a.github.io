@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Gabriel Abrahams 2022</copyright>
-    <lastBuildDate>Wed, 20 Apr 2022 09:35:39 +1000</lastBuildDate><atom:link href="https://www.thesciencegab.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.thesciencegab.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building a transcriptome simulator</title>
+      <link>https://www.thesciencegab.com/posts/building-transcriptome-sim/</link>
+      <pubDate>Thu, 28 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thesciencegab.com/posts/building-transcriptome-sim/</guid>
+      <description>Part 1 : Learning Godot First did the 2D tutorial.
+Then dived straight in!
+Day 1 TODO:
+ make RNAp and connections moveable after placement allow deletion of promoters and connections  Day 2  making plots a custom panel to have more control over them and fix focusing issue  Day 3  better arrows signals  C1-FFL is a sign sensitive delay element!</description>
+    </item>
+    
     <item>
       <title>Publications</title>
       <link>https://www.thesciencegab.com/publications/</link>
@@ -34,16 +46,6 @@
       <guid>https://www.thesciencegab.com/about/</guid>
       <description>Hello and welcome to my blog!
 Links to other gablogs The Social Science Gab</description>
-    </item>
-    
-    <item>
-      <title>Why this blog exists</title>
-      <link>https://www.thesciencegab.com/posts/why-this-blog-exists/</link>
-      <pubDate>Sun, 03 Apr 2022 00:08:42 +1100</pubDate>
-      
-      <guid>https://www.thesciencegab.com/posts/why-this-blog-exists/</guid>
-      <description>Because I wrote it.1
-Furthermore, my motivation is to practice writing, and to develop my ability to convey scientific ideas of my own and others.</description>
     </item>
     
   </channel>
