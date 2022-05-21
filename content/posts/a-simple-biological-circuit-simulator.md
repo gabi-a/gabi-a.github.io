@@ -46,10 +46,12 @@ _Keyboard Controls_
 \[S\] Toggle placing Signals  
 \[C\] Toggle placing Connections  
 _In vivo controls_  
-Left click items to select them, then press delete to remove them.  
+Left click items to select them, then press delete to remove them. Drag promoters/signals to move them.  
 Right click items to change their parameters.  
 Plots can be dragged and minimized. Reopen plots from the context menu of the associated promoter/signal (right click).  
 <img src="/TranscriptomeSim/refresh-cw.svg" style="display:inline-block; vertical-align:middle; padding:5px; border:1px solid black; border-radius:5px"></img> (Top right) Reset all concentrations to zero
 <!--iframe overflow="visible" src="/TranscriptomeSim/TranscriptomeSim_C1FFL.html" title="Transcirptome Simulator" style="min-width:900px;min-height:600px;"></iframe!-->
+
+I made the simulator using the [Godot game engine](https://godotengine.org/).  
 
 If you want to get in touch (e.g. to correct biological misconsceptions), please contact me at {{< cloakemail "abrahams.gabi@gmail.com" >}}. Thanks for reading!
