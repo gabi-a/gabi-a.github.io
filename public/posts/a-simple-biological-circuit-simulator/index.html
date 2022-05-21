@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>A Simple Biological Circuit Simulator - The Science Gab</title><link rel="icon" type="image/png" href=icons/myicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="A Simple Biological Circuit Simulator" />
+<meta property="og:description" content="In a few months time, I&rsquo;m very excited to be embarking on a PhD in Interdisciplinary Biosciences. Since I trained as a phycisist, I&rsquo;m keenly aware of the amount of stuff I don&rsquo;t know, keenely unaware of the stuff I don&rsquo;t know I don&rsquo;t know, and trying to avoid the wonderful physics tradition of deceiving myself that I know what I in fact don&rsquo;t know about any field that isn&rsquo;t physics or pure maths." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.thesciencegab.com/posts/a-simple-biological-circuit-simulator/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-04-28T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-04-28T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="A Simple Biological Circuit Simulator"/>
+<meta name="twitter:description" content="In a few months time, I&rsquo;m very excited to be embarking on a PhD in Interdisciplinary Biosciences. Since I trained as a phycisist, I&rsquo;m keenly aware of the amount of stuff I don&rsquo;t know, keenely unaware of the stuff I don&rsquo;t know I don&rsquo;t know, and trying to avoid the wonderful physics tradition of deceiving myself that I know what I in fact don&rsquo;t know about any field that isn&rsquo;t physics or pure maths."/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="https://www.thesciencegab.com/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://www.thesciencegab.com/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="https://www.thesciencegab.com/css/custom.css" />
+	<link rel="stylesheet" type="text/css" href="https://www.thesciencegab.com/css/dark.css" media="(prefers-color-scheme: dark)" />
+	<link rel="stylesheet" type="text/css" href="https://www.thesciencegab.com/css/custom-dark.css" media="(prefers-color-scheme: dark)" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script src="https://www.thesciencegab.com/js/main.js"></script>
+	<script src="https://www.thesciencegab.com/js/abc.js"></script>
+	<script src="https://www.thesciencegab.com/js/xyz.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<base href="https://www.thesciencegab.com/posts/a-simple-biological-circuit-simulator/">
+	<h1 class="site-title"><a href="https://www.thesciencegab.com/">The Science Gab</a></h1>
+	<div class="site-description"><h2>Personal gablog of Gabriel Abrahams.</h2><nav class="nav social">
+			<ul class="flat"><a href="https://github.com/gabi-a" title="Github"><i data-feather="github"></i></a><a href="https://twitter.com/GabrielAbrahams" title="Twitter"><i data-feather="twitter"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/publications">Publications</a>
+			</li>
+			
+			<li>
+				<a href="/acknowledgement">Acknowledgement of Country</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">A Simple Biological Circuit Simulator</h1>
+			<div class="meta">Posted at &mdash; Apr 28, 2022</div>
+		</div>
+
+		<div class="markdown">
+			<p>In a few months time, I&rsquo;m very excited to be embarking on a <a href="https://www.biodtp.ox.ac.uk/programme-0">PhD in Interdisciplinary Biosciences</a>. Since I trained as a phycisist, I&rsquo;m keenly aware of the amount of stuff I don&rsquo;t know, keenely unaware of the stuff I don&rsquo;t know I don&rsquo;t know, and trying to avoid the wonderful physics tradition of deceiving myself that I know what I in fact don&rsquo;t know about any field that isn&rsquo;t physics or pure maths.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<figure>
+<img src="https://imgs.xkcd.com/comics/degree_off.png"></img>
+<figcaption><a href="https://xkcd.com/1520/">Mandatory XKCD</a></figcaption>
+</figure>
+<p>Basically, I need to prepare and learn some bio! Speaking to a an alumni of the course, I was given a great list of textbook recommendation, including <a href="https://www.weizmann.ac.il/mcb/UriAlon/introduction-systems-biology-design-principles-biological-circuits">An Introduction to Systems Biology - Design Principles of Biological Circuits</a> by Uri Alon.</p>
+<p>Reading this, alongside <a href="https://www.booktopia.com.au/biochemistry-jeremy-berg/book/9781319114657.html">Biochemistry (Berg, Tymoczko &amp; Stryer)</a>, has proved a fascinating introduction to the biological mechanisms acting at the sub-cellular level.</p>
+<p>The essential story is this: most biological processes are governed by the actions of proteins - tiny molecular machines which can manipulate matter to build, transform and destroy other molecules. Proteins are produced in cells by special proteins called transcription factors, according to instructions coded for by DNA. The rates at which transcription factors produce proteins are governed by basic rules involving the concentration of other proteins in the cell, which can be abstractly defined according to simple mathematical equations. Because protein concentration affects protein production, a network emerges (called the transcriptome) in which the production of one protein governs the production of other proteins. This network can be quite complex, and can implement various functions with particular timing sequences. For example, the transcriptome might contain a healing algorithm: when the cell is damaged, this triggers production of a regeneration protein. Once that protein has performed it&rsquo;s function, it&rsquo;s production is reduced as it is no longer required.</p>
+<p>While there are excellent exercises in Alon&rsquo;s textbook, reading it I couldn&rsquo;t help but think it would fun to &ldquo;play&rdquo; with the circuits. Inspired by the brilliant <a href="https://www.falstad.com/circuit/">Falstad electronic circuit simulator</a> I decided to make my own (much less sophisticated) biological circuit simulator.</p>
+<p>There are currently three components to my transcriptome simulator:</p>
+<ol>
+<li>
+<p>Promoters<br>
+These are the transcription factors: they produce a protein <i>X<sub>n</sub></i> at a rate determined by intrinsic growth and decay parameters, as well as the concentration of other promoters or signals connected to them.</p>
+</li>
+<li>
+<p>Signals<br>
+These represent some external chemical signal to the cell - they are periodic functions which can be connected into promoters.</p>
+</li>
+<li>
+<p>Connections<br>
+Connections indicate that the production of one protein is influenced by the concentration of another. There are two types of connections, activators which turn on when the input protein is below a certain concentration (and off otherwise), and repressors which act the opposite way. Activators have an arrow head, repressors have a bar head.</p>
+</li>
+</ol>
+<p>The simplest non-trivial example is the autoregulator. In this circuit, a promoter is connected to itself with a repressor connection. The result is that the concentration of protein produced by that promoter can be raised much more quickly than without the repressor.</p>
+<p>To see autoregulation simulated, look no further than the simulator below! Other examples can be loaded from File -&gt; Load Example, and instructions to build your own circuits are at the bottom of the page.</p>
+<h1 id="transcriptome-simulator">Transcriptome Simulator</h1>
+<p><em>(Best viewed not on a mobile device)</em></p>
+<iframe overflow="visible" src="/TranscriptomeSim/TranscriptomeSim_Autoregulation.html" title="Transcirptome Simulator" style="min-width:360px;min-height:400px;width:1000px;height:600px"></iframe>
+<h2 id="instructions">Instructions</h2>
+<p><em>Keyboard Controls</em><br>
+[P] Toggle placing Promoters<br>
+[S] Toggle placing Signals<br>
+[C] Toggle placing Connections<br>
+<em>In vivo controls</em><br>
+Left click items to select them, then press delete to remove them.<br>
+Right click items to change their parameters.<br>
+Plots can be dragged and minimized. Reopen plots from the context menu of the associated promoter/signal (right click).<br>
+<img src="/TranscriptomeSim/refresh-cw.svg" style="display:inline-block; vertical-align:middle; padding:5px; border:1px solid black; border-radius:5px"></img> (Top right) Reset all concentrations to zero</p>
+<!--iframe overflow="visible" src="/TranscriptomeSim/TranscriptomeSim_C1FFL.html" title="Transcirptome Simulator" style="min-width:900px;min-height:600px;"></iframe!-->
+<p>If you want to get in touch (e.g. to correct biological misconsceptions), please contact me at 
+<style>
+  #span-a63fdd50.cloaked-e-mail:before {
+    content:attr(data-domain) "\0040" attr(data-user);
+    unicode-bidi:bidi-override;
+    direction:rtl;
+  }
+</style>
+&#32;<span class="cloaked-e-mail" data-user="ibag.smaharba" data-domain="moc.liamg" id="span-a63fdd50"></span>&#32;
+
+<script id="script-a63fdd50">
+  var scriptTag = document.getElementById("script-a63fdd50");
+  var link = document.createElement("a");
+  var address = "ibag.smaharba".split('').reverse().join('') + "@" + "moc.liamg".split('').reverse().join('');
+  link.href = "mailto" + ":" + address;
+  
+  link.innerText = address.split('?')[0];
+  
+  
+  scriptTag.parentElement.insertBefore(link, scriptTag.previousElementSibling);
+  scriptTag.parentElement.removeChild(scriptTag.previousElementSibling)
+</script>
+
+. Thanks for reading!</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>though as an experimentalist, the pure maths thing is not an issue for me&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+		</div>
+
+		<div class="post-tags">
+			
+				
+			
+		</div>
+		</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div> © Gabriel Abrahams 2022 |  <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+
+<script>feather.replace()</script>
+</body>
+</html>

@@ -3,3 +3,6 @@
 	url = https://github.com/vividvilla/ezhil.git
 [submodule "ezhil"]
 	url = https://github.com/gabi-a/ezhil.git
+[submodule "themes/hugo-cloak-email"]
+	path = themes/hugo-cloak-email
+	url = https://github.com/martignoni/hugo-cloak-email.git

@@ -1,7 +1,7 @@
 baseURL = "https://www.thesciencegab.com/"
 languageCode = "en-us"
 title = "The Science Gab"
-theme = "ezhil"
+theme = ["ezhil", "hugo-cloak-email"]
 
 copyright = "© Gabriel Abrahams 2022"
 
@@ -99,3 +99,6 @@ url = "https://twitter.com/GabrielAbrahams"
 # Enable tags.
 [taxonomies]
    tag = "tags"
+
+[markup.goldmark.renderer]
+unsafe = true
