@@ -13,7 +13,7 @@ In a few months time, I'm very excited to be embarking on a [PhD in Interdiscipl
 <figcaption><a href="https://xkcd.com/1520/">Mandatory XKCD</a></figcaption>
 </figure>
 
-Basically, I need to prepare and learn some bio! Speaking to a an alumni of the course, I was given a great list of textbook recommendation, including [An Introduction to Systems Biology - Design Principles of Biological Circuits](https://www.weizmann.ac.il/mcb/UriAlon/introduction-systems-biology-design-principles-biological-circuits) by Uri Alon. 
+Basically, I need to prepare and learn some bio! Speaking to a an alumni of the course, I was given a great list of textbook recommendations, including [An Introduction to Systems Biology - Design Principles of Biological Circuits](https://www.weizmann.ac.il/mcb/UriAlon/introduction-systems-biology-design-principles-biological-circuits) by Uri Alon. 
 
 Reading this, alongside [Biochemistry (Berg, Tymoczko & Stryer)](https://www.booktopia.com.au/biochemistry-jeremy-berg/book/9781319114657.html), has proved a fascinating introduction to the biological mechanisms acting at the sub-cellular level. 
 
