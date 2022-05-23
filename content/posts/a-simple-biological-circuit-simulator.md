@@ -5,6 +5,15 @@ draft: false
 math: true
 ---
 
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@GabrielAbrahams">
+<meta name="twitter:creator" content="@GabrielAbrahams">
+<meta name="twitter:title" content="A Simple Biological Circuit Simulator">
+<meta name="twitter:description" content="Building a transcriptome circuit simulator as preperation for a PhD in interdisciplinary bioscience.">
+<meta name="twitter:image" content="https://www.thesciencegab.com/TranscriptomeSim.PNG">
+
+<a href="#simulator">Take me straight to the simulator!</a>
+
 In a few months time, I'm very excited to be embarking on a [PhD in Interdisciplinary Biosciences](https://www.biodtp.ox.ac.uk/programme-0). Since I trained as a phycisist, I'm keenly aware of the amount of stuff I don't know, keenly unaware of the stuff I don't know I don't know, and trying to avoid the wonderful physics tradition of deceiving myself that I know what I in fact don't know about any field that isn't physics or pure maths.[^1]
 
 [^1]: though as an experimentalist, the pure maths thing is not an issue for me
@@ -82,4 +91,4 @@ This is the _repressilator_, theorised by Goodwin. According to Alon, it's imple
 
 Thanks for reading this far! Next, I plan to continue reading both these textbooks, and possibly make a start on some others. Hopefully there will be more to share here 😊🧬💻
 
-If you want to get in touch (to correct biological misconsceptions, or otherwise!), please contact me at {{< cloakemail "abrahams.gabi@gmail.com" >}}.
+If you want to get in touch (to correct biological misconsceptions, or otherwise!), please contact me at {{< cloakemail "abrahams.gabi@gmail.com" >}} or <a href="https://twitter.com/GabrielAbrahams">@GabrielAbrahams</a>.
