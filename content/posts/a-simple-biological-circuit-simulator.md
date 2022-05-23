@@ -2,6 +2,7 @@
 title: "A Simple Biological Circuit Simulator"
 date: 2022-04-28
 draft: false
+math: true
 ---
 
 In a few months time, I'm very excited to be embarking on a [PhD in Interdisciplinary Biosciences](https://www.biodtp.ox.ac.uk/programme-0). Since I trained as a phycisist, I'm keenly aware of the amount of stuff I don't know, keenly unaware of the stuff I don't know I don't know, and trying to avoid the wonderful physics tradition of deceiving myself that I know what I in fact don't know about any field that isn't physics or pure maths.[^1]
@@ -13,7 +14,7 @@ In a few months time, I'm very excited to be embarking on a [PhD in Interdiscipl
 <figcaption><a href="https://xkcd.com/1520/">Mandatory XKCD</a></figcaption>
 </figure>
 
-Basically, I need to prepare and learn some bio! Speaking to a an alumni of the course, I was given a great list of textbook recommendations, including [An Introduction to Systems Biology - Design Principles of Biological Circuits](https://www.weizmann.ac.il/mcb/UriAlon/introduction-systems-biology-design-principles-biological-circuits) by Uri Alon. 
+Basically, I need to prepare and learn some biology! Speaking to a an alumni of the course, I was given a great list of textbook recommendations, including [An Introduction to Systems Biology - Design Principles of Biological Circuits](https://www.weizmann.ac.il/mcb/UriAlon/introduction-systems-biology-design-principles-biological-circuits) by Uri Alon. 
 
 Reading this, alongside [Biochemistry (Berg, Tymoczko & Stryer)](https://www.booktopia.com.au/biochemistry-jeremy-berg/book/9781319114657.html), has proved a fascinating introduction to the biological mechanisms acting at the sub-cellular level. 
 
@@ -24,7 +25,7 @@ While there are excellent exercises in Alon's textbook, reading it I couldn't he
 There are currently three components to my transcriptome simulator:
 
 1. Promoters  
-    These are the transcription factors: they produce a protein <i>X<sub>n</sub></i> at a rate determined by intrinsic growth and decay parameters, as well as the concentration of other promoters or signals connected to them.
+    These are the transcription factors: they produce a protein $X_n$ at a rate determined by intrinsic growth and decay parameters, as well as the concentration of other promoters or signals connected to them.
 
 2. Signals  
     These represent some external chemical signal to the cell - they are periodic functions which can be connected into promoters.
@@ -34,7 +35,7 @@ There are currently three components to my transcriptome simulator:
 
 The simplest non-trivial example is the autoregulator. In this circuit, a promoter is connected to itself with a repressor connection. The result is that the concentration of protein produced by that promoter can be raised much more quickly than without the repressor.
 
-To see autoregulation simulated, look no further than the simulator below! Other examples can be loaded from File -> Load Example, and instructions to build your own circuits are at the bottom of the page.
+To see autoregulation simulated, look no further than the simulator below! Other examples can be loaded from File -> Load Example (top left), and instructions to build your own circuits can be found by clicking the Help button in the simulator (top left). Concentrations can be reset by clicking the reset button (top right).
 
 <script>
 window.mobileCheck = function() {
@@ -45,28 +46,36 @@ window.mobileCheck = function() {
 </script>
 
 # Transcriptome Simulator
+
 <div id="simulator">
+Please enable JavaScript.
 </div>
 
 <script>
 if (window.mobileCheck()) {
-    document.getElementById("simulator").innerHTML = "Not supported on mobile, sorry! Please open this page on a laptop or desktop computer. This is what it looks like: <img src='/TranscriptomeSimDay4[1].PNG'></img>"
+    document.getElementById("simulator").innerHTML = "<b>Not supported on mobile, sorry!</b> Please open this page on a laptop or desktop computer. This is what it looks like: <img src='/TranscriptomeSim.PNG'></img>"
 } else {
     document.getElementById("simulator").innerHTML = "<iframe overflow='visible' src='/TranscriptomeSim/TranscriptomeSim_Autoregulation.html' title='Transcirptome Simulator' style='min-width:360px;min-height:400px;width:1000px;height:600px'></iframe>"
 }
 </script>
 
-## Instructions
-_Keyboard Controls_  
-\[P\] Toggle placing Promoters  
-\[S\] Toggle placing Signals  
-\[C\] Toggle placing Connections  
-_In vivo controls_  
-Left click items to select them, then press delete to remove them. Drag promoters/signals to move them.  
-Right click items to change their parameters.  
-Plots can be dragged and minimized. Reopen plots from the context menu of the associated promoter/signal (right click).  
-<img src="/TranscriptomeSim/refresh-cw.svg" style="display:inline-block; vertical-align:middle; padding:5px; border:1px solid black; border-radius:5px"></img> (Top right) Reset all concentrations to zero
+Made using the [Godot game engine](https://godotengine.org/). 
 
-I made the simulator using the [Godot game engine](https://godotengine.org/).  
+## Brief descriptions of the examples
+### Autoregulation
+The simplest no trivial example of a network motif. Here, $X_0$ is unregulated, and $X_1$ is autoregulated. In the _E. coli_ network, the number of autoregulated nodes exceeds the expected number (were the network random) by 35 standard deviations.
 
-If you want to get in touch (e.g. to correct biological misconsceptions), please contact me at {{< cloakemail "abrahams.gabi@gmail.com" >}}. Thanks for reading!
+### C1-FFL Sign Sensitive Delay Element
+This network motif makes use of an AND gate (nodes $X_1$ and $X_3$) to filter out short term fluctuations in the input signals $S_0$ and $S_1$. The networks on the left and right are identical, except for the period of the signal nodes. In the output, $X_1$ is not activated because the period of $S_0$ is too short, whereas $X_3$ is activated because $S_1$ has a longer period. In _E. coli_, such a motif is used to determine if the cell should start processing the inferior sugar arabinose in the absence of glucose. The cell should only switch to arabinose processing if glucose is absent for an extended period of time - to respond to only short absences would be a waste of energy and resources. Thus the absence of glucose signal cAMP is an input to a C1-FFL network motif.
+
+### Bistable long term memory
+This motif is bistable because there are two stable states of $X_0$: OFF or ON. Initially in the stable OFF state, a sufficiently long step is provided (driving the concentration of $X_0$ above the threshold of it's self-activator), the output switches to ON and remains there after the pulse finishes (because it is now in the stable ON state).
+
+### Oscillator
+This is the _repressilator_, theorised by Goodwin. According to Alon, it's implementation in _E. coli_ in 2000 by Elowitz and Liebler helped start the field of synthetic biology.
+
+## Conclusion
+
+Thanks for reading this far! Next, I plan to continue reading both these textbooks, and possibly make a start on some others. Hopefully there will be more to share here 😊🧬💻
+
+If you want to get in touch (to correct biological misconsceptions, or otherwise!), please contact me at {{< cloakemail "abrahams.gabi@gmail.com" >}}.
