@@ -27,11 +27,15 @@ There are currently three components to my transcriptome simulator:
 1. Promoters  
     These are the transcription factors: they produce a protein $X_n$ at a rate determined by intrinsic growth and decay parameters, as well as the concentration of other promoters or signals connected to them.
 
+    The concentration $X_n$ of promoter $n$ is governed by the equation $$\frac{dX_n}{dt} = \beta - \alpha X_n$$ where $\beta$ is the growth term, which can be turned ON and OFF by connections, and $\alpha$ is the decay term (due to protein degredation or diffusion as the cell size expands). Promoters have an additional term $\beta_0$ which represents a constant growth term (regardless of the connection state), usually small.  
+
+    Promoters have two modes: AND and OR. In AND mode, the $\beta$ term is ON when _all_ connections are active, in OR mode only one connection needs to be active.
+
 2. Signals  
     These represent some external chemical signal to the cell - they are periodic functions which can be connected into promoters.
 
 3. Connections  
-    Connections indicate that the production of one protein is influenced by the concentration of another. There are two types of connections, activators which turn on when the input protein is below a certain concentration (and off otherwise), and repressors which act the opposite way. Activators have an arrow head, repressors have a bar head.
+    Connections indicate that the production of one protein is influenced by the concentration of another. There are two types of connections, repressors which turn ON when the input protein is below a threshold concentration $K$ (and OFF otherwise), and activators which act the opposite way. Repressors have a bar head, activators have an arrow head.
 
 The simplest non-trivial example is the autoregulator. In this circuit, a promoter is connected to itself with a repressor connection. The result is that the concentration of protein produced by that promoter can be raised much more quickly than without the repressor.
 
