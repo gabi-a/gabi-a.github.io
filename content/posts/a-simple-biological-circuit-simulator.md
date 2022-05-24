@@ -14,7 +14,7 @@ math: true
 
 <a href="#simulator">Take me straight to the simulator!</a>
 
-In a few months time, I'm very excited to be embarking on a [PhD in Interdisciplinary Biosciences](https://www.biodtp.ox.ac.uk/programme-0). Since I trained as a phycisist, I'm keenly aware of the amount of stuff I don't know, keenly unaware of the stuff I don't know I don't know, and trying to avoid the wonderful physics tradition of deceiving myself that I know what I in fact don't know about any field that isn't physics or pure maths.[^1]
+In a few months time, I'm very excited to be embarking on a [PhD in Interdisciplinary Biosciences](https://www.biodtp.ox.ac.uk/programme-0). Since I trained as a physicist, I'm keenly aware of the amount of stuff I don't know, keenly unaware of the stuff I don't know I don't know, and trying to avoid the wonderful physics tradition of deceiving myself that I know what I in fact don't know about any field that isn't physics or pure maths.[^1]
 
 [^1]: though as an experimentalist, the pure maths thing is not an issue for me
 
