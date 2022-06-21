@@ -9,7 +9,7 @@ math: true
 <meta name="twitter:site" content="@GabrielAbrahams">
 <meta name="twitter:creator" content="@GabrielAbrahams">
 <meta name="twitter:title" content="A Simple Biological Circuit Simulator">
-<meta name="twitter:description" content="Building a transcriptome circuit simulator as preperation for a PhD in interdisciplinary bioscience.">
+<meta name="twitter:description" content="Building a transcriptome circuit simulator as preparation for a PhD in interdisciplinary bioscience.">
 <meta name="twitter:image" content="https://www.thesciencegab.com/TranscriptomeSim.PNG">
 
 <a href="#simulator">Take me straight to the simulator!</a>
