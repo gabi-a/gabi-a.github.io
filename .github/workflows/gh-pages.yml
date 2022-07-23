@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: 16
         
-      - name: Install NPM Pachages
+      - name: Install NPM Packages
         run: npm ci
 
       - name: Setup Hugo
