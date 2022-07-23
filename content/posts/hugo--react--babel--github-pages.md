@@ -95,6 +95,11 @@ We're finally ready to make a React post!
 
 Make a new post, e.g. with title `My React Post`. It's contents are:
 ```
+---
+title: "My React Post"
+...
+---
+
 {{</* raw-html */>}}   
 <div id="root"></div>
 {{</* /raw-html */>}}
