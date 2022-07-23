@@ -22,11 +22,10 @@ jobs:
           # extended: true
 
       - name: Install NPM Packages
-        - uses: actions/checkout@v3
-        - uses: actions/setup-node@v3
-          with:
-            node-version: 16
-        - run: npm ci
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+        run: npm ci
 
       - name: Build
         run: hugo --minify
