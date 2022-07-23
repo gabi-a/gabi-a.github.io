@@ -98,6 +98,9 @@ Make a new post, e.g. with title `My React Post`. It's contents are:
 ---
 title: "My React Post"
 ...
+jsFiles:
+- "https://unpkg.com/react@16/umd/react.production.min.js"
+- "https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"
 ---
 
 {{</* raw-html */>}}   
