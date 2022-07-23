@@ -19,15 +19,6 @@ In a few months time, I&amp;rsquo;m very excited to be embarking on a PhD in Int
     </item>
     
     <item>
-      <title>Publications</title>
-      <link>https://www.thesciencegab.com/publications/</link>
-      <pubDate>Wed, 20 Apr 2022 09:35:39 +1000</pubDate>
-      
-      <guid>https://www.thesciencegab.com/publications/</guid>
-      <description>Journal Articles Abrahams, Gabriel Jan, and Janet Newman. 2019. “BLASTing Away Preconceptions in Crystallization Trials.” Acta Crystallographica Section F Structural Biology Communications 75 (3): 184–92.</description>
-    </item>
-    
-    <item>
       <title>Acknowledgement of Country</title>
       <link>https://www.thesciencegab.com/acknowledgement/</link>
       <pubDate>Tue, 19 Apr 2022 00:10:00 +1100</pubDate>
@@ -42,8 +33,16 @@ In a few months time, I&amp;rsquo;m very excited to be embarking on a PhD in Int
       <pubDate>Wed, 13 Apr 2022 00:08:42 +1100</pubDate>
       
       <guid>https://www.thesciencegab.com/about/</guid>
-      <description>Hello and welcome to my blog!
-Contact me at: #span-24809af8.cloaked-e-mail:before {content:attr(data-domain) &#34;\0040&#34; attr(data-user);unicode-bidi:bidi-override;direction:rtl;}&amp;#32;&amp;#32;var scriptTag = document.</description>
+      <description>I&amp;rsquo;m a physicist with a burgeoning interest in biosciences, particularly biophysics and compuational biology with applications to solving the climate emergency.</description>
+    </item>
+    
+    <item>
+      <title>Test React</title>
+      <link>https://www.thesciencegab.com/posts/test-react/</link>
+      <pubDate>Sun, 03 Apr 2022 00:08:42 +1100</pubDate>
+      
+      <guid>https://www.thesciencegab.com/posts/test-react/</guid>
+      <description>test</description>
     </item>
     
   </channel>

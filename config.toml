@@ -97,3 +97,7 @@ url = "https://twitter.com/GabrielAbrahams"
 
 [markup.goldmark.renderer]
 unsafe = true
+
+[security]
+  [security.exec]
+    allow = ['^dart-sass-embedded$', '^go$', '^npx$', '^postcss$', '^babel$']

@@ -10,7 +10,7 @@ math: true
 <meta name="twitter:creator" content="@GabrielAbrahams">
 <meta name="twitter:title" content="A Simple Biological Circuit Simulator">
 <meta name="twitter:description" content="Building a transcriptome circuit simulator as preparation for a PhD in interdisciplinary bioscience.">
-<meta name="twitter:image" content="https://www.thesciencegab.com/TranscriptomeSim.PNG">
+<meta name="twitter:image" content="https://www.thesciencegab.com/img/TranscriptomeSim.PNG">
 
 <a href="#simulator">Take me straight to the simulator!</a>
 
@@ -66,7 +66,7 @@ Please enable JavaScript.
 
 <script>
 if (window.mobileCheck()) {
-    document.getElementById("simulator").innerHTML = "<b>Not supported on mobile, sorry!</b> Please open this page on a laptop or desktop computer. This is what it looks like: <img src='/TranscriptomeSim.PNG'></img>"
+    document.getElementById("simulator").innerHTML = "<b>Not supported on mobile, sorry!</b> Please open this page on a laptop or desktop computer. This is what it looks like: <img src='/img/TranscriptomeSim.PNG'></img>"
 } else {
     document.getElementById("simulator").innerHTML = "<iframe overflow='visible' src='/TranscriptomeSim/TranscriptomeSim_Autoregulation.html' title='Transcirptome Simulator' style='min-width:360px;min-height:400px;width:1000px;height:600px'></iframe>"
 }
