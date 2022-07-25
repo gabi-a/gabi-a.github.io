@@ -49,7 +49,7 @@ module.exports = function (api) {
 ```yml
 - uses: actions/setup-node@v3
     with:
-        node-version: 16
+      node-version: 16
 - name: Install NPM Packages
     run: npm ci
 ```

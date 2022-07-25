@@ -4,7 +4,7 @@ date: 2022-04-13T00:08:42+11:00
 draft: false
 ---
 
-I'm a physicist with a burgeoning interest in biosciences, particularly biophysics and compuational biology with applications to solving the climate emergency.
+I'm a physicist with a burgeoning interest in biosciences, particularly biophysics and computational biology with applications to solving the climate emergency.
 
 Contact me at: {{< cloakemail "abrahams.gabi@gmail.com" >}}
 
